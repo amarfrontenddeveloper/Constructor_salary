@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constractor</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+	class salary
+	{
+		constructor()
+		{   var basic,hra,da,gross;}
+      cal()
+         {
+	this.basic=prompt("Enter your basic salary");
+	
+    
+	
+	this.hra=(this.basic*20)/100;
+	
+	this.da=(this.basic*40)/100;
+	this.gross=Number(this.basic)+Number(this.da)+Number(this.hra);
+	document.write("Basic salary="+this.basic+"<br>");
+	document.write("DA="+this.da+"<br>");
+	document.write("HRA="+this.hra+"<br>");
+	document.write("Total Salary"+this.gross+"<br>");
+      }
+  }
+  
+    
+    
+   let amar=new salary();
+   amar.cal();
+   
+</script>
+</html>
